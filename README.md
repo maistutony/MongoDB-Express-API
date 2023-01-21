@@ -35,7 +35,7 @@ const models = require('./models');
 const routes = require('./routes');
 
 `Use the imported routes in your Express application by adding the following line in the `app.js` file:`
-app.use('/', routes);```
+app.use('/', routes);
 
 
 
