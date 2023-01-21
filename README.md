@@ -16,26 +16,35 @@ Building a MongoDB Express API can be a straightforward process with the right t
 ```sh
 npm install express mongoose
 ```
+```js
 const express = require('express');
 const mongoose = require('mongoose');
+```
 
 Connect to your MongoDB database by adding the following lines in the `app.js` file:
 
-```js 
+```js
 mongoose.connect('mongodb://localhost/your_database_name', { useNewUrlParser: true });
+```
 
-`Define your MongoDB schema and models by creating a new file called models.js. In this file, you can define your schema and models for the collections in your database.`
+Define your MongoDB schema and models by creating a new file called models.js. In this file, you can define your schema and models for the collections in your database
 
-`In the `app.js` file, import your models by adding the following line at the top of the file: `
+In the `app.js` file, import your models by adding the following line at the top of the file:
+```js
 const models = require('./models');
+```
 
-`Create the routes for your API by creating a new file called routes.js. In this file, you can define the routes for your API and handle the CRUD operations for your collections.`
+Create the routes for your API by creating a new file called routes.js. In this file, you can define the routes for your API and handle the CRUD operations for your collections.
 
-`In the `app.js` file, import your routes by adding the following line at the top of the file:`
+In the `app.js` file, import your routes by adding the following line at the top of the file:
+```js
 const routes = require('./routes');
+```
 
-`Use the imported routes in your Express application by adding the following line in the `app.js` file:`
+Use the imported routes in your Express application by adding the following line in the `app.js` file:
+```js
 app.use('/', routes);
+```
 
 
 
